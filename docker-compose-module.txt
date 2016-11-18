@@ -32,3 +32,13 @@ Recreating dockercompose_hello-container_1
 Attaching to dockercompose_hello-container_1
 hello-container_1  | Hello, Docker Compose!
 dockercompose_hello-container_1 exited with code 0
+
+
+Thomass-MacBook-Pro:DockerCompose thomasmanley$ docker-compose up
+Starting dockercompose_data-container_1
+Recreating dockercompose_hello-container_1
+Attaching to dockercompose_data-container_1, dockercompose_hello-container_1
+dockercompose_data-container_1 exited with code 0
+hello-container_1  | Hello, Docker Compose!
+dockercompose_hello-container_1 exited with code 0
+Thomass-MacBook-Pro:DockerCompose thomasmanley$ 

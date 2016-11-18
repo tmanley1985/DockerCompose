@@ -1,8 +1,16 @@
 hello-container:
   image: realpage/alpine-bash:3.3
+  volumes_from:
+    - data-container
+
+  command: sh /home/welcome-compose.sh
+
+
+data-container:
+  image: realpage/alpine-bash:3.3
   volumes:
 
     # Path on the host, relative to the Compose file
     - ./scripts:/home
 
-  command: sh /home/welcome-compose.sh
+  command: /bin/ash
