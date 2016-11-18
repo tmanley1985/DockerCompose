@@ -1,2 +1,8 @@
 hello-container:
-  image: hello-world
+  image: realpage/alpine-bash:3.3
+  volumes:
+
+    # Path on the host, relative to the Compose file
+    - ./scripts:/home
+
+  command: sh /home/welcome-compose.sh
